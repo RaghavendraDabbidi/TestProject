@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="handlers"
+            type="com.teka.myapplication.listeners_login.CallBack" />
+        <variable
+            name="login"
+            type="com.teka.myapplication.login.LoginModel" >
+        </variable>
+    </data>
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_delivery_boy"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/imag"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/teka_logo"
+        android:layout_marginTop="@dimen/d_50dp"
+        android:contentDescription="@string/img" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textSize="@dimen/d_30dp"
+        android:textColor="@color/ms_white"
+        android:layout_below="@id/imag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/d_30dp"
+        android:id="@+id/login_txt"
+        tools:ignore="SpUsage" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_txt"
+        android:layout_marginLeft="@dimen/d_40dp"
+        android:layout_marginTop="@dimen/d_30dp"
+        android:layout_marginRight="@dimen/d_40dp"
+        android:backgroundTint="@color/login_light_gray"
+        android:gravity="center"
+        android:hint="@string/phone"
+        app:met_underlineColor="@color/colorAccent"
+        app:met_textColorHint="@color/ms_white"
+        app:met_baseColor="@color/colorWhite"
+        android:inputType="number"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:textColor="@color/login_light_gray"
+        android:textSize="@dimen/s_15sp"
+        />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:met_underlineColor="@color/colorAccent"
+        android:layout_marginLeft="@dimen/d_40dp"
+        android:layout_marginTop="@dimen/d_30dp"
+        android:layout_marginRight="@dimen/d_40dp"
+        app:met_baseColor="@color/colorWhite"
+        android:backgroundTint="@color/login_light_gray"
+        android:gravity="center"
+        android:hint="@string/password"
+        app:met_textColorHint="@color/ms_white"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:layout_below="@id/phone_num"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        android:textSize="@dimen/s_15sp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/login_light_gray"
+        />
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_40dp"
+        android:layout_marginTop="@dimen/d_40dp"
+        android:layout_marginRight="@dimen/d_40dp"
+        android:background="@color/login_red"
+        android:layout_below="@id/password"
+        android:text="@string/submit"
+        android:onClick="@{()-> handlers.onSubmitClick()}"
+        android:textStyle="bold"
+        android:textSize="@dimen/s_16sp"
+        android:textColor="@color/login_submit_txt" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_40dp"
+        android:layout_marginTop="@dimen/d_30dp"
+        android:layout_marginRight="@dimen/d_40dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/submit_btn"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/forgot_pw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingBottom="@dimen/d_5dp"
+            android:onClick="@{()-> handlers.onForgotPasswordClick()}"
+            android:paddingTop="@dimen/d_5dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/login_forgot_pass_txt" />
+
+        <TextView
+            android:id="@+id/new_member"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:onClick="@{()-> handlers.onNewMemberClick()}"
+            android:paddingBottom="@dimen/d_5dp"
+            android:paddingTop="@dimen/d_5dp"
+            android:gravity="end"
+            android:text="@string/new_member"
+            android:textColor="@color/login_forgot_pass_txt" />
+
+
+    </LinearLayout>
+</RelativeLayout>
+</layout>

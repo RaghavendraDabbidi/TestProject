@@ -1,4 +1,4 @@
-package com.apollo.myapplication;
+package com.teka.myapplication;
 
 import org.junit.Test;
 
