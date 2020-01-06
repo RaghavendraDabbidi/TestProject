@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "743796655938",
+    "firebase_url": "https://testproject1-b6c74.firebaseio.com",
+    "project_id": "testproject1-b6c74",
+    "storage_bucket": "testproject1-b6c74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743796655938:android:a5ce8f87b333e33f32eadb",
+        "android_client_info": {
+          "package_name": "com.apollo.myapplication.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743796655938-qsvak64j5b8amh1171kjq4ps5o801ucf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyi6nyeQz72gKqYCk572yHWleDGWyxahA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743796655938-qsvak64j5b8amh1171kjq4ps5o801ucf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
