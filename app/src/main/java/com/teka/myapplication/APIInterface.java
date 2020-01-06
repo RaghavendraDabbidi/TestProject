@@ -1,13 +1,11 @@
-package com.apollo.myapplication;
+package com.teka.myapplication;
 
-import com.apollo.myapplication.api.CityRequest;
-import com.apollo.myapplication.api.CityResponce;
-import com.apollo.myapplication.api.StateRequest;
-import com.apollo.myapplication.api.StateResponse;
-import com.apollo.myapplication.model.RegistrationRequest;
-import com.apollo.myapplication.model.RegistrationResponse;
-
-import java.util.Map;
+import com.teka.myapplication.dto.CityRequest;
+import com.teka.myapplication.dto.CityResponce;
+import com.teka.myapplication.dto.StateRequest;
+import com.teka.myapplication.dto.StateResponse;
+import com.teka.myapplication.dto.RegistrationRequest;
+import com.teka.myapplication.dto.RegistrationResponse;
 
 import retrofit2.Call;
 import retrofit2.http.Body;

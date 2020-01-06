@@ -1,4 +1,4 @@
-package com.apollo.myapplication.model;
+package com.teka.myapplication.dto;
 
 import com.google.gson.annotations.SerializedName;
 

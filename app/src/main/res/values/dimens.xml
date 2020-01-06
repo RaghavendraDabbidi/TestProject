@@ -19,4 +19,13 @@
     <dimen name="dimen100dp">100dp</dimen>
     <dimen name="dimen5dp">5dp</dimen>
     <dimen name="dimen150dp">150dp</dimen>
+
+    <dimen name="d_60dp">60dp</dimen>
+    <dimen name="d_30dp">30dp</dimen>
+    <dimen name="s_20sp">20sp</dimen>
+    <dimen name="d_40dp">40dp</dimen>
+    <dimen name="s_16sp">16sp</dimen>
+    <dimen name="d_50dp">50dp</dimen>
+    <dimen name="d_5dp">5dp</dimen>
+    <dimen name="s_15sp">15sp</dimen>
 </resources>

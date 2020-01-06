@@ -1,11 +1,9 @@
-package com.apollo.myapplication;
+package com.teka.myapplication;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,17 +11,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.apollo.myapplication.api.CityRequest;
-import com.apollo.myapplication.api.CityResponce;
-import com.apollo.myapplication.api.StateRequest;
-import com.apollo.myapplication.api.StateResponse;
-import com.apollo.myapplication.model.RegistrationRequest;
-import com.apollo.myapplication.model.RegistrationResponse;
-import com.apollo.myapplication.model.SignUpModel;
+import com.teka.myapplication.dto.CityRequest;
+import com.teka.myapplication.dto.CityResponce;
+import com.teka.myapplication.dto.StateRequest;
+import com.teka.myapplication.dto.StateResponse;
+import com.teka.myapplication.dto.RegistrationRequest;
+import com.teka.myapplication.dto.RegistrationResponse;
+import com.teka.myapplication.dto.SignUpModel;
 
 import retrofit2.Call;
 import retrofit2.Callback;

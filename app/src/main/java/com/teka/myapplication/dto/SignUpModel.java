@@ -1,4 +1,4 @@
-package com.apollo.myapplication.model;
+package com.teka.myapplication.dto;
 
 public class SignUpModel {
     public String refferalCode;

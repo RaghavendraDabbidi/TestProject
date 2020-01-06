@@ -1,10 +1,10 @@
-package com.apollo.myapplication.api;
+package com.teka.myapplication.dto;
 
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 
-public class StateResponse {
+public class CityResponce {
     @SerializedName("message")
     public String message;
     @SerializedName("success")
@@ -46,19 +46,19 @@ public class StateResponse {
         this.zcServerDateTime = zcServerDateTime;
     }
 
-    public class Data{
+    public class Data {
         @SerializedName("listData")
-        public ListData liistData;
+        public ListData listData;
 
-        public ListData getLiistData() {
-            return liistData;
+        public ListData getListData() {
+            return listData;
         }
 
-        public void setLiistData(ListData liistData) {
-            this.liistData = liistData;
+        public void setListData(ListData listData) {
+            this.listData = listData;
         }
 
-        public class ListData{
+        public class ListData {
             @SerializedName("records")
             public String records;
             @SerializedName("select")
@@ -68,15 +68,11 @@ public class StateResponse {
             @SerializedName("page")
             public int page;
             @SerializedName("rows")
-            public ArrayList<Rows>rows;
+            public ArrayList<Object> rows;
             @SerializedName("zc_extra")
             public String zcExtra;
             @SerializedName("pivotData")
             public String pivotData;
-            @SerializedName("aggregation")
-            public String aggregation;
-            @SerializedName("size")
-            public int size;
 
             public String getRecords() {
                 return records;
@@ -110,11 +106,11 @@ public class StateResponse {
                 this.page = page;
             }
 
-            public ArrayList<Rows> getRows() {
+            public ArrayList<Object> getRows() {
                 return rows;
             }
 
-            public void setRows(ArrayList<Rows> rows) {
+            public void setRows(ArrayList<Object> rows) {
                 this.rows = rows;
             }
 
@@ -150,35 +146,16 @@ public class StateResponse {
                 this.size = size;
             }
 
-            public class Rows{
-                @SerializedName("uid")
-                public String uid;
-                @SerializedName("name")
-                public String name;
-
-                public String getUid() {
-                    return uid;
-                }
-
-                public void setUid(String uid) {
-                    this.uid = uid;
-                }
-
-                public String getName() {
-                    return name;
-                }
-
-                public void setName(String name) {
-                    this.name = name;
-                }
-            }
-
-
+            @SerializedName("aggregation")
+            public String aggregation;
+            @SerializedName("size")
+            public int size;
 
 
 
 
         }
-
     }
+
+
 }

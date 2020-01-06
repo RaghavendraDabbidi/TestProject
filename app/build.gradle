@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    dataBinding{
+    dataBinding {
         enabled = true
     }
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "com.apollo.myapplication"
+        applicationId 'com.teka.myapplication'
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
@@ -20,10 +20,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    dataBinding{
-        enabled = true
-    }
-
 }
 
 dependencies {
@@ -52,4 +48,26 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
     implementation 'com.squareup.okhttp3:okhttp:3.4.1'
 
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+
+    //glide library used for images
+    implementation 'com.github.bumptech.glide:glide:3.6.0'
+    //dataBinding
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    //Retrofit2 & RXJava
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.9'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    //Add Firebase Core//
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    //Add FCM//
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    //MultiDEX
+    implementation 'com.android.support:multidex:1.0.3'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:3.5.2'
 }
+//Add the Google services plugin//
+apply plugin: 'com.google.gms.google-services'
