@@ -4,8 +4,6 @@
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#D81B60</color>
 
-
-
     <color name="colorGrey">#3F000000</color>
     <color name="ms_white">#FFFFFF</color>
     <color name="ms_material_blue_500">#2196f3</color>
@@ -36,15 +34,12 @@
     <color name="login_edit_txt_underline">#979797</color>
     <color name="login_txt">#fffffd</color>
 
-
-
     <color name="signup_edt">#a4a9ad</color>
     <color name="signup_edt_line">#7f9298</color>
 
     <color name="otp_verify">#fffffd</color>
     <color name="otp_verify_submit">#cf0014</color>
     <color name="otp_resend">#01a2fd</color>
-
 
     <color name="gray_round">#a7a7a7</color>
     <color name="error_color">#EE0E3B</color>

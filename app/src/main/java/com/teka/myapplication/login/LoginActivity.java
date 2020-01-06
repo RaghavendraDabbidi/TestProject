@@ -1,13 +1,17 @@
 package com.teka.myapplication.login;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import com.teka.myapplication.R;
+import com.teka.myapplication.Registration;
 import com.teka.myapplication.api.ApiClient;
 import com.teka.myapplication.api.ApiInterface;
 import com.teka.myapplication.databinding.ActivityLoginBinding;
@@ -36,6 +40,7 @@ public class LoginActivity extends AppCompatActivity implements CallBack {
         loginBinding.setHandlers(this);
 //        loginModel = new LoginModel("","");
 //        binding.setLogin(loginModel);
+
     }
 
     @Override
@@ -50,7 +55,8 @@ public class LoginActivity extends AppCompatActivity implements CallBack {
 
     @Override
     public void onNewMemberClick() {
-
+        Intent intent = new Intent(LoginActivity.this, Registration.class);
+        startActivity(intent);
     }
 
     public void call() {
