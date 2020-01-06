@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "743796655938",
-    "firebase_url": "https://testproject1-b6c74.firebaseio.com",
-    "project_id": "testproject1-b6c74",
-    "storage_bucket": "testproject1-b6c74.appspot.com"
+    "project_number": "28286806561",
+    "firebase_url": "https://testteka-91ac0.firebaseio.com",
+    "project_id": "testteka-91ac0",
+    "storage_bucket": "testteka-91ac0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:743796655938:android:a5ce8f87b333e33f32eadb",
+        "mobilesdk_app_id": "1:28286806561:android:5567ce13def45b28681160",
         "android_client_info": {
-          "package_name": "com.apollo.myapplication.login"
+          "package_name": "com.teka.myapplication"
         }
       },
       "oauth_client": [
         {
-          "client_id": "743796655938-qsvak64j5b8amh1171kjq4ps5o801ucf.apps.googleusercontent.com",
+          "client_id": "28286806561-b5aqnfmborcct24mthsm7n0mp4n5h2p2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAyi6nyeQz72gKqYCk572yHWleDGWyxahA"
+          "current_key": "AIzaSyBkw2VPzbHZRVcRApkr1V-C9bHttjD7VdQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "743796655938-qsvak64j5b8amh1171kjq4ps5o801ucf.apps.googleusercontent.com",
+              "client_id": "28286806561-b5aqnfmborcct24mthsm7n0mp4n5h2p2.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
